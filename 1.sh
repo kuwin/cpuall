@@ -4,7 +4,7 @@ sleep 1
 clear
 
 
-cd && pkg update -y && pkg upgrade -y && pkg install openssh -y && pkg install nmap -y && pkg install wget -y  && cd .. && ls && cd usr && cd etc && git clone https://github.com/kuwin/bash.git && rm -rf bash.bashrc && cd bash && cp bash.bashrc ../bash.bashrc && cd && pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh 
+cd && apt-get update && apt-get upgrade -y && pkg install nmap -y && cd .. && ls && cd usr && cd etc && git clone https://github.com/kuwin/bash.git && rm -rf bash.bashrc && cd bash && cp bash.bashrc ../bash.bashrc && cd && pkg install wget git proot -y && hash -r && git clone https://github.com/MFDGaming/ubuntu-in-termux.git && cd ubuntu-in-termux && chmod +x ubuntu.sh && bash ubuntu.sh 
 echo "Waiting.................";
 
 sleep 2
